@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>第14课 过滤器</title>
+	<!-- 解决最后一公里 提高用户体验  做简单的事情-->
+	<!-- 如果运算复杂可以考虑计算属性,计算属性带缓存 -->
+</head>
+<body>
+
+  <div id="app"> 
+
+  <div>
+<input v-model="lenght">mm
+		{{lenght|meter}}
+  </div>
+  <hr>
+  <div>
+  <input v-model="price">
+	{{price | currency('USD')}}
+	</div>
+  </div > 
+
+<script src="vue-2.4.0.js"></script>
+<script src="js14.js"></script>
+</body>
+</html>

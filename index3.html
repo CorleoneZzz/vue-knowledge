@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>第三课 V-FOR</title>
+</head>
+<body>
+	<div id="app">
+	<!-- 利用v-for  循环数组 food 是给foodlist定义一个元素变量  -->
+	<!-- {{food.price*food.discount}} 参与运算 -->
+		<ul>
+		   <!--  <li v-for="food in foodList">{{food}}</li> -->
+		   <!--  <li v-for="food in foodList">{{food.nz}}：价格 ${{food.price}}</li> -->
+           <li v-for="food in foodList">{{food.nz}}：价格 ${{food.price*food.discount}}
+
+		</ul>
+	</div>
+<script src="vue-2.4.0.js"></script>
+<script src="js.js"></script>
+</body>
+</html>

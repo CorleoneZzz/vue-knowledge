@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>第六课 v-model</title>
+</head>
+<body>
+	<div id="app">
+     <!-- v-model -->
+     <!-- <input type="test" v-model="name"> -->
+     <!-- v-model.lazy惰性更新 -->
+     <!-- <input type="test" v-model.lazy="name"> -->
+     <!-- v-model.trim 输入的前后空格去掉-->
+     <!-- <input type="test" v-model.trim="name"> -->
+     <!-- v-model.number 只能输入数字-->
+    <input type="test" v-model.number="price">
+     {{price}}
+	</div>
+<script src="vue-2.4.0.js"></script>
+<script src="js6.js"></script>
+</body>
+</html>

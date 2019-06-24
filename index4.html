@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>第三课 V-bind</title>
+	<style >
+		.active{
+			background: red
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+	<!-- 
+	v-bind  
+	动态绑定url  
+	img图片地址
+	绑定类
+	-->
+<!--<a v-bind:class="klass" v-bind:href="url">跳转</a> -->
+<!-- <a v-bind:class="{active:isActive}" v-bind:href="url">跳转</a> -->
+<!-- 省略:前端部分 正常运行 -->
+<a :class="{active:isActive}" :href="url">跳转</a>
+	<br>
+	<img v-bind:src="img">
+
+	</div>
+<script src="vue-2.4.0.js"></script>
+<script src="js.js"></script>
+</body>
+</html>

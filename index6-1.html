@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>第六课 v-model</title>
+</head>
+<body>
+	<div id="app">
+     <!-- v-model -->
+    <!-- 
+    <label>
+     男
+     <input v-model="sex" value="male" type="radio">
+     </label>
+    
+     <label>
+     女
+     <input v-model="sex" value="fmale" type="radio">
+     </label>
+     {{sex}}
+      -->
+
+
+     <!-- ----------------- -->
+
+<!--      <label>
+     js
+     <input v-model="hobby" value="js" type="checkbox">
+     </label>
+    
+     <label>
+     css
+     <input v-model="hobby" value="css" type="checkbox">
+     </label>
+     {{hobby}} -->
+   <!-- ----------------- -->
+    <textarea v-model="article"></textarea>
+    <br>
+    <div>来自哪里_? {{form}}</div>
+    <select v-model="form">
+        <option value="1">天桥区</option>
+        <option value="2">历下区</option>
+        <option value="3">历城区</option>
+    </select> 
+    <br>
+       <div>你要去哪里? 按住CTRL {{dest}}</div>
+    <select v-model="dest" multiple>
+        <option value="1">天桥区</option>
+        <option value="2">历下区</option>
+        <option value="3">历城区</option>
+    </select> 
+	</div>
+<script src="vue-2.4.0.js"></script>
+<script src="js6.js"></script>
+</body>
+</html>

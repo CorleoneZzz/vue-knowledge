@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>第七课 v-if</title>
+</head>
+<body>
+	<div id="app">
+    <div v-if="role=='admin'||role=='super_admin'">
+            管理员您好   !
+    </div>
+    <div v-else-if="role=='hr'">
+            你好领导
+    </div>
+    <div v-else>
+            您是不是迷路了,您没有权限访问
+    </div>
+   
+	</div>
+<script src="vue-2.4.0.js"></script>
+<script src="js6.js"></script>
+</body>
+</html>
