@@ -1,5 +1,5 @@
 Vue.component('like',{
-	template:'<button :class="{likes:likes}" @click="toggle_like()">赞{{like_count}} </button>',
+	template:'<button :class="{likes:likes}" @click="toggle_like()">👍{{like_count}} </button>',
 	//template:'#like-component-tpl',
 	//ES6 ` 多行
 	data:function () {
